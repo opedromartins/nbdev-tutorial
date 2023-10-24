@@ -12,5 +12,8 @@ d = { 'settings': { 'branch': 'main',
                                      'nbdev_tutorial.card.Card.__lt__': ('card.html#card.__lt__', 'nbdev_tutorial/card.py'),
                                      'nbdev_tutorial.card.Card.__str__': ('card.html#card.__str__', 'nbdev_tutorial/card.py')},
             'nbdev_tutorial.deck': { 'nbdev_tutorial.deck.Deck': ('deck.html#deck', 'nbdev_tutorial/deck.py'),
+                                     'nbdev_tutorial.deck.Deck.__contains__': ('deck.html#deck.__contains__', 'nbdev_tutorial/deck.py'),
                                      'nbdev_tutorial.deck.Deck.__init__': ('deck.html#deck.__init__', 'nbdev_tutorial/deck.py'),
-                                     'nbdev_tutorial.deck.Deck.__str__': ('deck.html#deck.__str__', 'nbdev_tutorial/deck.py')}}}
+                                     'nbdev_tutorial.deck.Deck.__len__': ('deck.html#deck.__len__', 'nbdev_tutorial/deck.py'),
+                                     'nbdev_tutorial.deck.Deck.__str__': ('deck.html#deck.__str__', 'nbdev_tutorial/deck.py'),
+                                     'nbdev_tutorial.deck.Deck.pop': ('deck.html#deck.pop', 'nbdev_tutorial/deck.py')}}}
