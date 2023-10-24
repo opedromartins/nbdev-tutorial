@@ -4,6 +4,11 @@
 
 A deck of cards demo of [nbdev](https://nbdev.fast.ai/).
 
+## Documentation
+
+Full documentation can be found at
+[nbdev-tutorial](https://opedromartins.github.io/nbdev-tutorial/)
+
 ## Install
 
 ``` sh
@@ -27,6 +32,3 @@ suits
 ```
 
     ['♠️', '♥️', '♦️', '♣️']
-
-Full documentation can be found at
-[nbdev-tutorial](https://opedromartins.github.io/nbdev-tutorial/)
