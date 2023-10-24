@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "card.html",
+    "href": "card.html",
+    "title": "Card – A basic playing card",
+    "section": "",
+    "text": "We will be using numbers to represent playing card clubs and ranks.\nThese are the suits:\nsuits\n\n['♠️', '♥️', '♦️', '♣️']\nFor instance, the suit at index 0:\nsuits[0]\n\n'♠️'\nThese are the ranks:\nranks\n\n[None, 'A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']\nFor instance, the rank at index 1:\n(Note that there isn’t a rank at index 0, since we want the rank to match the indices where possible.)\nranks[1]\n\n'A'\nsource"
+  },
+  {
+    "objectID": "card.html#comparison-operators",
+    "href": "card.html#comparison-operators",
+    "title": "Card – A basic playing card",
+    "section": "Comparison Operators",
+    "text": "Comparison Operators\nEquality, less than and greater than work on the rank and suit indices:\nA test for equality:\n\ntest_eq(Card(suit=3, rank=4), Card(suit=3, rank=4))\n\nAnd &lt;:\n\nassert Card(suit=1, rank=3) &lt; Card(suit=2, rank=3)\n\nAnd &gt;:\n\nassert Card(suit=3, rank=3) &gt; Card(suit=2, rank=3)\nassert not Card(suit=1, rank=3) &gt; Card(suit=2, rank=3)"
+  },
+  {
+    "objectID": "deck.html",
+    "href": "deck.html",
+    "title": "Deck - A deck of cards",
+    "section": "",
+    "text": "source\n\nDeck\n\n Deck ()\n\nA deck of 52 cards, not including jokers.\nWhen we initially create a deck, all of the cards will be present:\n\ndeck = Deck()\ndeck\n\nA♠️; 2♠️; 3♠️; 4♠️; 5♠️; 6♠️; 7♠️; 8♠️; 9♠️; 10♠️; J♠️; Q♠️; K♠️; A♥️; 2♥️; 3♥️; 4♥️; 5♥️; 6♥️; 7♥️; 8♥️; 9♥️; 10♥️; J♥️; Q♥️; K♥️; A♦️; 2♦️; 3♦️; 4♦️; 5♦️; 6♦️; 7♦️; 8♦️; 9♦️; 10♦️; J♦️; Q♦️; K♦️; A♣️; 2♣️; 3♣️; 4♣️; 5♣️; 6♣️; 7♣️; 8♣️; 9♣️; 10♣️; J♣️; Q♣️; K♣️\n\n\nThat should be 52 cards.\n\nlen(deck)\n\n52\n\n\nWe can check if a card is on the deck:\n\nCard(1,1) in deck\n\nTrue\n\n\n\nsource\n\n\nDeck.pop\n\n Deck.pop (idx:int=-1)\n\nRemove and return one card.\n\n\n\n\n\n\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\nidx\nint\n-1\nThe index of the card to remove (default: last card)\n\n\n\nLet’s pop a card\n\ndeck.pop()\n\nK♣️\n\n\nAnd now the dack should have only 51 cards\n\nlen(deck)\n\n51\n\n\n\nsource\n\n\nDeck.remove\n\n Deck.remove (card:nbdev_tutorial.card.Card)\n\nRemove a specific card.\n\ncard23 = Card(2, 3)\ndeck.remove(card23)\n\nassert card23 not in deck\n\n\nsource\n\n\nDeck.shuffle\n\n Deck.shuffle ()\n\nShuffle the cards.\n\nsource\n\n\ndraw_n\n\n draw_n (n:int, replace:bool=True)\n\nDraw n cards from the deck.\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\nn\nint\n\nThe number of cards to draw\n\n\nreplace\nbool\nTrue\nWhether to replace the cards after drawing\n\n\n\n\ndraw_n(5)\n\n[8♥️, 4♣️, 3♣️, 5♥️, 5♠️]"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "nbdev-tutorial",
+    "section": "",
+    "text": "A deck of cards demo of nbdev."
+  },
+  {
+    "objectID": "index.html#documentation",
+    "href": "index.html#documentation",
+    "title": "nbdev-tutorial",
+    "section": "Documentation",
+    "text": "Documentation\nFull documentation can be found at nbdev-tutorial"
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "nbdev-tutorial",
+    "section": "Install",
+    "text": "Install\npip install nbdev-tutorial"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "nbdev-tutorial",
+    "section": "How to use",
+    "text": "How to use\nThis lib provides a Card class you can use to create, display and compare playing cards:\n\nCard(1,3)\n\n3♥️\n\n\n\nsuits\n\n['♠️', '♥️', '♦️', '♣️']"
+  }
+]
