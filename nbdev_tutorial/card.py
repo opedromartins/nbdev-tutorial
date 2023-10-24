@@ -3,11 +3,14 @@
 # %% auto 0
 __all__ = ['suits', 'ranks', 'Card']
 
-# %% ../nbs/00_card.ipynb 4
+# %% ../nbs/00_card.ipynb 2
+from fastcore.utils import *
+
+# %% ../nbs/00_card.ipynb 5
 suits = ["♠️", "♥️", "♦️", "♣️"]
 ranks = [None, "A"] + [str(x) for x in range(2, 11)] + ["J", "Q", "K"]
 
-# %% ../nbs/00_card.ipynb 13
+# %% ../nbs/00_card.ipynb 14
 class Card:
     "A playing card, created by passing in `rank` and `suit`"
     def __init__(self,
@@ -19,3 +22,14 @@ class Card:
     def __str__(self):
         return f"{ranks[self.rank]}{suits[self.suit]}"
     __repr__ = __str__
+
+# %% ../nbs/00_card.ipynb 19
+@patch
+def __eq__(self:Card, a:Card):
+    return (self.suit, self.rank) == (a.suit, a.rank)
+@patch
+def __lt__(self:Card, a:Card):
+    return (self.suit, self.rank) < (a.suit, a.rank)
+@patch
+def __gt__(self:Card, a:Card):
+    return (self.suit, self.rank) > (a.suit, a.rank)

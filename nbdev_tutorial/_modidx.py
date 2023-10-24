@@ -6,5 +6,8 @@ d = { 'settings': { 'branch': 'main',
                 'git_url': 'https://github.com/opedromartins/nbdev-tutorial',
                 'lib_path': 'nbdev_tutorial'},
   'syms': { 'nbdev_tutorial.card': { 'nbdev_tutorial.card.Card': ('card.html#card', 'nbdev_tutorial/card.py'),
+                                     'nbdev_tutorial.card.Card.__eq__': ('card.html#card.__eq__', 'nbdev_tutorial/card.py'),
+                                     'nbdev_tutorial.card.Card.__gt__': ('card.html#card.__gt__', 'nbdev_tutorial/card.py'),
                                      'nbdev_tutorial.card.Card.__init__': ('card.html#card.__init__', 'nbdev_tutorial/card.py'),
+                                     'nbdev_tutorial.card.Card.__lt__': ('card.html#card.__lt__', 'nbdev_tutorial/card.py'),
                                      'nbdev_tutorial.card.Card.__str__': ('card.html#card.__str__', 'nbdev_tutorial/card.py')}}}
